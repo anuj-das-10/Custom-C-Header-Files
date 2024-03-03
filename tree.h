@@ -93,7 +93,7 @@ int isBST(Tree* root) {
 
 
 //	It checks whether the given two binary trees are identical or not.
-int areIdentical(Tree* root1, Tree* root2) {
+int isIdentical(Tree* root1, Tree* root2) {
 	if(root1 == NULL && root2 == NULL) {
 		return 1;
 	}
@@ -102,8 +102,8 @@ int areIdentical(Tree* root1, Tree* root2) {
 	}
 	
 	return (root1->data == root2->data) 
-			&& areIdentical(root1->left, root2->left) 
-			&& areIdentical(root1->right, root2->right);
+			&& isIdentical(root1->left, root2->left) 
+			&& isIdentical(root1->right, root2->right);
 }
 
 
